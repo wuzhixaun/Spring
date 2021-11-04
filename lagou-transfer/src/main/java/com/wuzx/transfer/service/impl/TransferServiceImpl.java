@@ -3,6 +3,7 @@ package com.wuzx.transfer.service.impl;
 
 import com.wuzx.transfer.dao.AccountDao;
 import com.wuzx.transfer.dao.impl.JdbcAccountDaoImpl;
+import com.wuzx.transfer.factory.BeanFactory;
 import com.wuzx.transfer.pojo.Account;
 import com.wuzx.transfer.service.TransferService;
 
@@ -11,7 +12,7 @@ import com.wuzx.transfer.service.TransferService;
  */
 public class TransferServiceImpl implements TransferService {
 
-    private AccountDao accountDao = new JdbcAccountDaoImpl();
+    private AccountDao accountDao = (AccountDao) BeanFactory.getBean("accountDao");
 
     @Override
     public void transfer(String fromCardNo, String toCardNo, int money) throws Exception {

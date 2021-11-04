@@ -9,5 +9,9 @@
         <module name="lagou-transfer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lagou-transfer" target="11" />
+      <module name="Spring" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

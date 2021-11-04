@@ -1,6 +1,7 @@
 package com.wuzx.transfer.servlet;
 
 
+import com.wuzx.transfer.factory.BeanFactory;
 import com.wuzx.transfer.pojo.Result;
 import com.wuzx.transfer.service.TransferService;
 import com.wuzx.transfer.service.impl.TransferServiceImpl;
@@ -21,7 +22,7 @@ public class TransferServlet extends HttpServlet {
 
 
     // 1. 实例化service层对象
-    private TransferService transferService = new TransferServiceImpl();
+    private TransferService transferService = (TransferService) BeanFactory.getBean("transferService");
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

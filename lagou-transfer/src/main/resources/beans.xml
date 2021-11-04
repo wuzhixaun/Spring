@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="accountDao" class="com.wuzx.transfer.dao.impl.JdbcAccountDaoImpl"/>
+    <bean id="transferService" class="com.wuzx.transfer.service.impl.TransferServiceImpl"/>
+</beans>
