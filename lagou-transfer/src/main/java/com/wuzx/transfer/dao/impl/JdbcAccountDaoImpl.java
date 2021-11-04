@@ -4,6 +4,7 @@ package com.wuzx.transfer.dao.impl;
 
 import com.wuzx.transfer.dao.AccountDao;
 import com.wuzx.transfer.pojo.Account;
+import com.wuzx.transfer.utils.ConnectionUtils;
 import com.wuzx.transfer.utils.DruidUtils;
 
 import java.sql.Connection;
@@ -19,7 +20,7 @@ public class JdbcAccountDaoImpl implements AccountDao {
     @Override
     public Account queryAccountByCardNo(String cardNo) throws Exception {
         //从连接池获取连接
-        Connection con = DruidUtils.getInstance().getConnection();
+        Connection con = ConnectionUtils.getInstance().getCurrentThreadConn();;
         String sql = "select * from account where cardNo=?";
         PreparedStatement preparedStatement = con.prepareStatement(sql);
         preparedStatement.setString(1,cardNo);
@@ -43,7 +44,7 @@ public class JdbcAccountDaoImpl implements AccountDao {
     public int updateAccountByCardNo(Account account) throws Exception {
 
         // 从连接池获取连接
-        Connection con = DruidUtils.getInstance().getConnection();
+        Connection con = ConnectionUtils.getInstance().getCurrentThreadConn();
         String sql = "update account set money=? where cardNo=?";
         PreparedStatement preparedStatement = con.prepareStatement(sql);
         preparedStatement.setInt(1,account.getMoney());
