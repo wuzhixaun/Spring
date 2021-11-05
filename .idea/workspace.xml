@@ -101,6 +101,10 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.BeanFactory" />
+      <item itemvalue="Maven.lagou-transfer [tomcat7:run]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BeanFactory" />
