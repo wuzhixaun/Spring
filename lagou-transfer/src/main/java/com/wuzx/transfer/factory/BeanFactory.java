@@ -1,11 +1,14 @@
 package com.wuzx.transfer.factory;
 
+import com.alibaba.druid.util.StringUtils;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 
@@ -41,6 +44,33 @@ public class BeanFactory {
                 Object o = aClass.newInstance();
                 map.put(id, o);
             }
+
+
+            // 配置依赖属性
+            final List<Element> propertyList = rootElement.selectNodes("//property");
+            for (Element pro : propertyList) {
+
+                final String name = pro.attributeValue("name");
+                final String className = pro.attributeValue("ref");
+
+
+                // 取得这个属性的父对象
+                final String parentId = pro.getParent().attributeValue("id");
+                final Object parentObject = map.get(parentId);
+
+                final Method[] methods = parentObject.getClass().getMethods();
+
+                String methodName = "set" + name;
+                for (Method method : methods) {
+                    if (StringUtils.equalsIgnoreCase(method.getName(), methodName)) {
+                        method.invoke(parentObject, map.get(className));
+                        map.put(parentId, parentObject);
+                    }
+                }
+
+            }
+
+
         } catch (DocumentException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -48,6 +78,8 @@ public class BeanFactory {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
     }

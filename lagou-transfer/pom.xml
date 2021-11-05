@@ -60,14 +60,18 @@
             <version>1.6.1</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+        <!-- dom4j需要配合这个使用定位 -->
         <dependency>
             <groupId>jaxen</groupId>
             <artifactId>jaxen</artifactId>
             <version>1.2.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.10</version>
+        </dependency>
 
     </dependencies>
 

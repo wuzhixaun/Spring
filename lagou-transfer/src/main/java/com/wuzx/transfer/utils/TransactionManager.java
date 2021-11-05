@@ -5,23 +5,19 @@ import java.sql.SQLException;
 public class TransactionManager {
 
 
-    private TransactionManager() {
+    private ConnectionUtils connectionUtils;
 
+
+    public void setConnectionUtils(ConnectionUtils connectionUtils) {
+        this.connectionUtils = connectionUtils;
     }
-
-    private static TransactionManager transactionManager = new TransactionManager();
-
-    public static TransactionManager getInstance() {
-        return transactionManager;
-    }
-
 
     /**
      * 开启事务
      * @throws SQLException
      */
     public void beginTransaction() throws SQLException {
-        ConnectionUtils.getInstance().getCurrentThreadConn().setAutoCommit(false);
+        connectionUtils.getCurrentThreadConn().setAutoCommit(false);
     }
 
 
@@ -30,7 +26,7 @@ public class TransactionManager {
      * @throws SQLException
      */
     public void commit() throws SQLException {
-        ConnectionUtils.getInstance().getCurrentThreadConn().commit();
+        connectionUtils.getCurrentThreadConn().commit();
     }
 
 
@@ -39,7 +35,7 @@ public class TransactionManager {
      * @throws SQLException
      */
     public void rollBack() throws SQLException {
-        ConnectionUtils.getInstance().getCurrentThreadConn().rollback();
+        connectionUtils.getCurrentThreadConn().rollback();
     }
 
 }

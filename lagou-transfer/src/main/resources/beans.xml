@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans>
-    <bean id="accountDao" class="com.wuzx.transfer.dao.impl.JdbcAccountDaoImpl"/>
-    <bean id="transferService" class="com.wuzx.transfer.service.impl.TransferServiceImpl"/>
+    <bean id="accountDao" class="com.wuzx.transfer.dao.impl.JdbcAccountDaoImpl">
+        <property name="connectionUtils" ref="connectionUtils"/>
+    </bean>
+
+    <bean id="transferService" class="com.wuzx.transfer.service.impl.TransferServiceImpl">
+        <property name="AccountDao" ref="accountDao"/>
+    </bean>
+
+    <bean id="connectionUtils" class="com.wuzx.transfer.utils.ConnectionUtils"/>
+
+    <bean id="transactionManager" class="com.wuzx.transfer.utils.TransactionManager">
+        <property name="connectionUtils" ref="connectionUtils"/>
+    </bean>
+
+    <bean id="proxyFactory" class="com.wuzx.transfer.factory.ProxyFactory">
+        <property name="transactionManager" ref="transactionManager"/>
+    </bean>
 </beans>
