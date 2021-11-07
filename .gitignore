@@ -1,4 +1,4 @@
 # Project exclude paths
-/lagou-transfer/target/
+/lagou-com.wuzx.transfer/target/
 .idea
 *.iml

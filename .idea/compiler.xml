@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lagou-transfer-iocxml" />
         <module name="lagou-transfer" />
+        <module name="lagou-transfer-ioc-anno" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lagou-transfer" target="11" />
+      <module name="lagou-transfer-ioc-anno" target="11" />
+      <module name="lagou-transfer-iocxml" target="11" />
       <module name="Spring" target="11" />
     </bytecodeTargetLevel>
   </component>

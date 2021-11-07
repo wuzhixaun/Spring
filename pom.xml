@@ -8,7 +8,9 @@
     <artifactId>Spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>lagou-transfer</module>
+        <module>lagou-com.wuzx.transfer</module>
+        <module>lagou-com.wuzx.transfer-iocxml</module>
+        <module>lagou-com.wuzx.transfer-ioc-anno</module>
     </modules>
     <packaging>pom</packaging>
 
