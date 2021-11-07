@@ -4,52 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bfdd1d5-3101-4c61-8097-5d5c3c98faab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/dao/impl/JdbcAccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/factory/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/factory/ProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/pojo/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/pojo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/service/TransferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/service/impl/TransferServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/servlet/TransferServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/utils/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/utils/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/webapp/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/test/java/IOCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/dao/impl/JdbcAccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/factory/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/factory/ProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/pojo/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/pojo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/service/TransferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/service/impl/TransferServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/servlet/TransferServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/utils/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/utils/DruidUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/java/com/wuzx/transfer/utils/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/main/webapp/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-transfer-iocxml/src/test/java/IoCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="9bfdd1d5-3101-4c61-8097-5d5c3c98faab" name="Changes" comment="feat: 基于注解的方式搭建转账服务">
+      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/factory/CompanyFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/pojo/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-transfer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-transfer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-transfer/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-transfer/src/main/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/dao/impl/JdbcAccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/java/com/wuzx/transfer/dao/impl/JdbcAccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/test/java/IOCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/test/java/IOCTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +70,7 @@
       <recent name="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IOCTest.test (1)">
+  <component name="RunManager" selected="JUnit.IOCTest.testFactoryBean">
     <configuration name="IOCTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lagou-transfer-ioc-anno" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,11 +81,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOCTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lagou-transfer-iocxml" />
+    <configuration name="IOCTest.testFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-transfer-ioc-anno" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="IOCTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="testFactoryBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOCTest.testLazy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-transfer-ioc-anno" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IOCTest" />
+      <option name="METHOD_NAME" value="testLazy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,30 +121,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IoCTest.testIoC111" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lagou-transfer-iocxml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IoCTest" />
-      <option name="METHOD_NAME" value="testIoC111" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.IoCTest.testIoC" />
-      <item itemvalue="JUnit.IOCTest.test" />
-      <item itemvalue="JUnit.IoCTest.testIoC111" />
       <item itemvalue="JUnit.IoCTest.test" />
       <item itemvalue="JUnit.IOCTest.test (1)" />
+      <item itemvalue="JUnit.IOCTest.testLazy" />
+      <item itemvalue="JUnit.IOCTest.testFactoryBean" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOCTest.testFactoryBean" />
+        <item itemvalue="JUnit.IOCTest.testLazy" />
         <item itemvalue="JUnit.IOCTest.test (1)" />
         <item itemvalue="JUnit.IoCTest.testIoC" />
         <item itemvalue="JUnit.IoCTest.test" />
-        <item itemvalue="JUnit.IoCTest.testIoC111" />
-        <item itemvalue="JUnit.IOCTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +149,14 @@
       <workItem from="1635956993928" duration="845000" />
       <workItem from="1636007433975" duration="5004000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 基于注解的方式搭建转账服务">
+      <created>1636273748941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636273748941</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +173,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 基于注解的方式搭建转账服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 基于注解的方式搭建转账服务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

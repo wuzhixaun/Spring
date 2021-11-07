@@ -5,6 +5,7 @@ import com.wuzx.transfer.dao.AccountDao;
 import com.wuzx.transfer.pojo.Account;
 import com.wuzx.transfer.utils.ConnectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
@@ -14,6 +15,7 @@ import java.sql.ResultSet;
 /**
  * @author 应癫
  */
+@Lazy
 @Repository("accountDao")
 public class JdbcAccountDaoImpl implements AccountDao {
 
