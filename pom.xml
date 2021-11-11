@@ -11,6 +11,7 @@
         <module>lagou-com.wuzx.transfer</module>
         <module>lagou-com.wuzx.transfer-iocxml</module>
         <module>lagou-com.wuzx.transfer-ioc-anno</module>
+        <module>SpringMVC</module>
     </modules>
     <packaging>pom</packaging>
 
