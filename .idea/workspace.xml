@@ -4,26 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bfdd1d5-3101-4c61-8097-5d5c3c98faab" name="Changes" comment="feat spring 源码剖析">
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/annotations/Autowired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/annotations/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/annotations/RequestMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/annotations/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/pojo/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/servlet/LgDispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/resources/springmvc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="9bfdd1d5-3101-4c61-8097-5d5c3c98faab" name="Changes" comment="feat: 手写SpringMVC 框架">
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/config/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/pojo/MyProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/pojo/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/pojo/RandomProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/wuzx/springboot/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/pojo/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/pojo/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/servlet/LgDispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-handwritten/src/main/java/com/wuzx/mvcframework/servlet/LgDispatcherServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,24 +61,31 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mvc-handwritten/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wuzx.mvcframework.servlet" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot/src/main/resources" />
       <recent name="$PROJECT_DIR$/mvc-handwritten/src/main" />
       <recent name="$PROJECT_DIR$/mvc-handwritten/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/SpringMVC/src/main/java/com/wuzx/controller" />
-      <recent name="$PROJECT_DIR$/SpringMVC/src/main/java/com/wuzx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lagou-transfer-ioc-anno/src/main/resources" />
@@ -83,10 +93,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clearn" />
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IOCTest.testFactoryBean">
+  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
     <configuration name="IOCTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lagou-transfer-ioc-anno" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,12 +148,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wuzx.springboot.SpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.IoCTest.testIoC" />
       <item itemvalue="JUnit.IoCTest.test" />
       <item itemvalue="JUnit.IOCTest.test (1)" />
       <item itemvalue="JUnit.IOCTest.testLazy" />
       <item itemvalue="JUnit.IOCTest.testFactoryBean" />
+      <item itemvalue="Spring Boot.SpringbootApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -167,7 +186,9 @@
       <workItem from="1636470272188" duration="2011000" />
       <workItem from="1636643040640" duration="2763000" />
       <workItem from="1636648893143" duration="300000" />
-      <workItem from="1636991771099" duration="835000" />
+      <workItem from="1636991771099" duration="1121000" />
+      <workItem from="1637072099733" duration="2663000" />
+      <workItem from="1637246911305" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 基于注解的方式搭建转账服务">
       <created>1636273748941</created>
@@ -183,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636648923496</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 手写SpringMVC 框架">
+      <created>1636992877034</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636992877035</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +234,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="feat: 基于注解的方式搭建转账服务" />
     <MESSAGE value="feat spring 源码剖析" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat spring 源码剖析" />
+    <MESSAGE value="feat: 手写SpringMVC 框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 手写SpringMVC 框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
