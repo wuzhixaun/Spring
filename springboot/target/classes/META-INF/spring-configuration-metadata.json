@@ -1,0 +1,92 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.wuzx.springboot.pojo.Person",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "randomm",
+      "type": "com.wuzx.springboot.pojo.RandomProperties",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "test",
+      "type": "com.wuzx.springboot.pojo.MyProperties",
+      "sourceType": "com.wuzx.springboot.pojo.MyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.family",
+      "type": "java.lang.String[]",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "person.hobby",
+      "type": "java.util.List",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "person.id",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "person.map",
+      "type": "java.util.Map",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "person.pet",
+      "type": "com.wuzx.springboot.pojo.Pet",
+      "sourceType": "com.wuzx.springboot.pojo.Person"
+    },
+    {
+      "name": "randomm.less-than10",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "randomm.long-num",
+      "type": "java.lang.Long",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "randomm.number",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "randomm.rangge",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "randomm.uuid",
+      "type": "java.lang.String",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "randomm.value",
+      "type": "java.lang.String",
+      "sourceType": "com.wuzx.springboot.pojo.RandomProperties"
+    },
+    {
+      "name": "test.id",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wuzx.springboot.pojo.MyProperties"
+    },
+    {
+      "name": "test.name",
+      "type": "java.lang.String",
+      "sourceType": "com.wuzx.springboot.pojo.MyProperties"
+    }
+  ],
+  "hints": []
+}
