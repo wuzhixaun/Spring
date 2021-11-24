@@ -3,6 +3,11 @@ package com.lagou.controller;
 import com.lagou.domain.User;
 import com.lagou.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -110,6 +115,36 @@ public class UserController {
     public User getById(@PathVariable Integer id) {
         User user = userService.getById(id);
         return user;
+    }
+
+    /**
+     * 获取当前登录用户
+     * @return
+     */
+    @GetMapping("/loginUser")
+    @ResponseBody
+    public UserDetails getCurrcentUser() {
+        return (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+    }
+
+    /**
+     * 获取当前登录用户方式2
+     * @return
+     */
+    @GetMapping("/loginUser2")
+    @ResponseBody
+    public UserDetails getCurrcentUser(Authentication authentication) {
+        return (UserDetails) authentication.getPrincipal();
+    }
+
+    /**
+     * 获取当前登录用户方式2
+     * @return
+     */
+    @GetMapping("/loginUser3")
+    @ResponseBody
+    public UserDetails getCurrcentUser(@AuthenticationPrincipal UserDetails UserDetails) {
+        return UserDetails;
     }
 
 }

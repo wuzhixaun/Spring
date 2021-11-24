@@ -7,6 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -42,5 +43,18 @@ public class MyUserDetailsService implements UserDetailsService {
                 true,// 用户是否锁定 true 代表未锁定
                 authorities
                 );
+    }
+
+    public static void main(String[] args) {
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+        for (int i = 0; i < 10; i++) {
+            final String encode = bCryptPasswordEncoder.encode("123456");
+            System.out.println(encode);
+
+            System.out.println(bCryptPasswordEncoder.upgradeEncoding(encode));
+        }
+
+
+
     }
 }

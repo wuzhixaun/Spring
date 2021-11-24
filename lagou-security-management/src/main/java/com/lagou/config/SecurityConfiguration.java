@@ -47,6 +47,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")  // 修改自定义表单name值
                 .passwordParameter("password")
                 .successForwardUrl("/") // 登录成功跳转的路径
+                .and().rememberMe() // 开启记住我功能
+                .tokenValiditySeconds(20) // token失效时间
+                .rememberMeParameter("remember-me")
                 .and().authorizeRequests()
                 .antMatchers("/toLoginPage").permitAll() // 放行当前请求
                 .anyRequest().authenticated(); //所有请求都需要登录认证才能访问;
