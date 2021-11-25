@@ -76,6 +76,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .rememberMeParameter("remember-me")
                 .tokenRepository(getPersistentTokenRepository());
 
+        // session管理
+        http.sessionManagement() //设置session管理
+                .invalidSessionUrl("/toLoginPage") // 失效跳转页面，默认是登录页
+                .maximumSessions(1) //设置session最大会话数量 ,1同一时间只能有一个
+                .maxSessionsPreventsLogin(false)//当达到最大会话个数时阻止登录
+                .expiredUrl("/toLoginPage");//设置session过期后跳转路径
 
         // 关闭csrf防护
         http.csrf().disable();
